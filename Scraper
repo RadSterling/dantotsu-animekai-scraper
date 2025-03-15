@@ -1,0 +1,44 @@
+# Dantotsu AnimeKai Scraper
+
+This is a web scraper for extracting anime data from **animekai.com** and formatting it in JSON for integration with **Dantotsu**.
+
+## Features
+✅ Scrapes anime titles, thumbnails, and episode links  
+✅ Extracts video URLs for playback  
+✅ Saves data in `output/dantotsu_animekai.json`  
+
+## Installation
+1. **Clone the repository:**  
+   ```sh
+   git clone https://github.com/YOUR_USERNAME/dantotsu-animekai-scraper.git
+   cd dantotsu-animekai-scraper
+   ```
+2. **Install dependencies:**  
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## Usage
+Run the scraper using:
+```sh
+python scraper.py
+```
+This will generate a JSON file with the scraped anime data.
+
+## Output Format
+```json
+[
+    {
+        "title": "Anime Name",
+        "link": "https://animekai.com/anime-url",
+        "thumbnail": "https://animekai.com/thumbnail.jpg",
+        "videos": [
+            "https://animekai.com/video1.mp4",
+            "https://animekai.com/video2.mp4"
+        ]
+    }
+]
+```
+
+## License
+This project is for educational purposes only. Please respect the website's terms of service.
